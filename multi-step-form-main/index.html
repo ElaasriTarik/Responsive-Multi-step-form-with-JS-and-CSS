@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Multi-step form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" charset="utf-8" defer></script>
+</head>
+<body>
+
+    <nav class="sideBar">
+        <div class="sideElements">
+           <ul>
+             <li class="step1 stepN">1</li>
+             <div class="stepDesc">
+               <p>Step 1</p>
+               <h3>Your info</h3>
+             </div>
+           </ul>
+           <ul>
+             <li class="step2 stepN">2</li>
+             <div class="stepDesc">
+               <p>Step 2</p>
+               <h3>Select Plan</h3>
+             </div>
+           </ul>
+           <ul>
+             <li class="step3 stepN">3</li>
+             <div class="stepDesc">
+               <p>Step 3</p>
+               <h3>Add-Ons</h3>
+             </div>
+           </ul>
+           <ul>
+             <li class="step4 stepN">4</li>
+             <div class="stepDesc">
+               <p>Step 4</p>
+               <h3>Summary</h3>
+             </div>
+           </ul>
+        </div>
+    </nav>
+   <section class="userInfo">
+     <h2 class="header">Personal info</h2>
+     <h5 class="moreDetailsOnHeader">Please provide your name, email address, and phone number.</h5>
+     <div class="inputUserDetails">
+        <label for="" class="labelForInput">Name</label><input type="text" placeholder="e.g. Stephen King" class="inputFields">
+        <label for="" class="labelForInput">Email Address</label><input type="email" placeholder="e.g. stephenking@lorem.com" class="inputFields">
+        <label for="" class="labelForInput">Phone Number</label><input type="text" placeholder="e.g. +1 234 567 890" class="inputFields">
+     </div>
+     <div class="positionBtn">
+        <button type="button" name="button" class="goBack">Go Back</button>
+        <button type="button" name="button" class="nextStepBtn">Next Step</button>
+     </div>
+   </section>
+   <section class="selectPlan">
+     <h2 class="header">Select Your Plan</h2>
+     <h5 class="moreDetailsOnHeader">You have the option of monthly or yearly billing.</h5>
+     <div class="allPlans">
+
+       <div class="plans">
+         <div class="plan arcade">
+           <div class="arcadeImage">
+             <img src="assets/images/icon-arcade.svg" alt="arcade">
+           </div>
+           <div class="arcade-price">
+             <h3 class="typeOfPlan">Arcade</h3>
+             <h5 class="price arcadePrice">$9/mo</h5>
+             <p class="yearlySubs">2 months free</p>
+           </div>
+         </div>
+       </div>
+       <div class="plans">
+         <div class="plan advanced">
+           <div class="advancedImage">
+             <img src="assets/images/icon-advanced.svg" alt="arcade">
+           </div>
+           <div class="advanced-price">
+             <h3 class="typeOfPlan">advanced</h3>
+             <h5 class="price advancedPrice">$12/mo</h5>
+             <p class="yearlySubs">2 months free</p>
+           </div>
+         </div>
+       </div>
+       <div class="plans">
+         <div class="plan pro">
+           <div class="proImage">
+             <img src="assets/images/icon-pro.svg" alt="arcade">
+           </div>
+           <div class="pro-price">
+             <h3 class="typeOfPlan">Pro</h3>
+             <h5 class="price proPrice">$15/mo</h5>
+             <p class="yearlySubs">2 months free</p>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="changePeriod">
+       <h5 class="monthly">Monthly</h5>
+       <div class="slideButton">
+         <span class="circle"></span>
+       </div>
+       <h5 class="yearly">Yearly</h5>
+     </div>
+     <div class="positionBtn">
+        <button type="button" name="button" class="goBack">Go Back</button>
+        <button type="button" name="button" class="nextStepBtn">Next Step</button>
+     </div>
+   </section>
+  <section class="addOns">
+    <h2 class="header">Pick add ons</h2>
+    <h5 class="moreDetailsOnHeader">Add-ons help enhance your gaming experience.</h5>
+    <div class="addOnsChoices">
+      <div class="onlineServiceAdd choice">
+        <input type="checkbox" class="onlineService checkbox">
+        <div class="addOnsTitle">
+         <h2 class="addOnsLabel">Online service</h2>
+         <p class="AddOnsdetails">Access to multiplayer games</p>
+        </div>
+        <p class="addOnsPrice onlineServicePrice">+$1/mo</p>
+      </div>
+      <div class="largerStorageAdd choice">
+        <input type="checkbox" class="largerStorage checkbox">
+        <div class="addOnsTitle">
+         <h2 class="addOnsLabel">Larger Storage</h2>
+         <p class="AddOnsdetails">Extra 1TB of cloud save</p>
+        </div>
+        <p class="addOnsPrice largerStoragePrice">+$2/mo</p>
+      </div>
+      <div class="customizableProfileAdd choice">
+        <input type="checkbox" class="customizeProfile checkbox">
+        <div class="addOnsTitle">
+         <h2 class="addOnsLabel">Customizable Profile</h2>
+         <p class="AddOnsdetails">Custom theme on your profile</p>
+        </div>
+        <p class="addOnsPrice customizePrice">+$2/mo</p>
+      </div>
+    </div>
+    <div class="positionBtn">
+       <button type="button" name="button" class="goBack">Go Back</button>
+       <button type="button" name="button" class="nextStepBtn">Next Step</button>
+    </div>
+  </section>
+  <section class="finishingUp">
+    <h2 class="header">Finishing Up</h2>
+    <h5 class="moreDetailsOnHeader">Double-check everything looks OK before confirming.</h5>
+    <div class="chosenPlans">
+       <div class="chosenPlan">
+          <div class="chosenType">
+            <h2 class="chosenPlanType">Arcade <span class="yearlyOrMonthly">(Monthly)</span></h2>
+            <p><a href="#" class="changePlan">Change</a></p>
+          </div>
+          <p class="chosenPrice">
+            $9/mo
+          </p>
+       </div> <hr>
+       <div class="additionalServices">
+        <!-- to be added by user -->
+       </div>
+    </div>
+    <div class="totalPrice">
+      <h3 class="totalPer">Total (per month)</h3>
+      <h4 class="total">+$12/mo</h4>
+    </div>
+    <div class="positionBtn">
+       <button type="button" name="button" class="goBack">Go Back</button>
+       <button type="button" name="button" class="nextStepBtn confirm">Confirm</button>
+    </div>
+  </section>
+  <section class="thanks">
+    <div class="thanksImage">
+       <img src="assets/images/icon-thank-you.svg" alt="Thank you icon" class="thanksIcon">
+    </div>
+    <h2 class="thankYou">Thank you!</h2>
+    <p class="thanksMessage">Thanks for confirming your subscription! We hope you have fun
+  using our platform. If you ever need support, please feel free
+  to email us at support@loremgaming.com.
+</p>
+  </section>
+</body>
+</html>
